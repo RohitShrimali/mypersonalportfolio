@@ -1,0 +1,35 @@
+import React from "react";
+import project from "../assets/recipes-website.png";
+import { AiFillGithub } from "react-icons/ai";
+import { RiSignalTowerFill } from "react-icons/ri";
+const ProjectCard = () => {
+  return (
+    <div className="p-4 -m-4">
+      <div className="h-fit w-[300px] md:w-[320p] border-2 border-gray-600 border-opacity-60 rounded-2xl overflow-clip lg:overlow-hidden hover:shadow-md lg:hover:scale-105 transition-all backdrop-blur-3xl shadow-xl">
+        <a href="/">
+          <img
+            src={project}
+            alt="project-img"
+            className="lg:h-48 h-[200px] w-full object-cover object-center"
+          />
+        </a>
+        <div className="p-4 flex flex-col lg:gap-3">
+          <h2 className="tracking-widest text-2xl text-gray-600">Healthy Recipes Website</h2>
+          <h1 className="text-lg lg:text-xl font-bold text-gray-600">
+            There have so many healthy recipes inside this website.
+          </h1>
+          <div className="flex items-center justify-between">
+            <a href="https://github.com/" target="_blank" rel="noreferrer">
+              <AiFillGithub className="text-pink-500 font-bold inline-flex item-center text-lg md:text-xl md:mb-2 lg:mb-0 hover:text-purple-600 cursor-pointer" />
+            </a>
+            <a href="https://rohitshrimali.github.io/Recipes-Website.github.io/" target="_blank" rel="noreferrer">
+              <RiSignalTowerFill className="text-pink-500 font-bold inline-flex item-center text-lg md:text-xl md:mb-2 lg:mb-0 hover:text-purple-600 cursor-pointer" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ProjectCard;
